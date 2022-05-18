@@ -1,0 +1,19 @@
+a{
+    color: #8A153A;
+    text-decoration: none;
+}
+
+a::before {
+	content: "";
+	position: absolute;
+    background: #8A153A;
+	height: 3px;
+	width: 0;
+	transform: translateY(2.2ex);
+    transition: .5s ease-out;
+	
+}
+
+a:hover::before {
+	width: 9.5ch;
+}
